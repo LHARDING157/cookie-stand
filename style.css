@@ -7,7 +7,7 @@ body {
     font-family: "poppins", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.01em;
     line-height: 1.6;
     color: black;
 }
@@ -70,9 +70,8 @@ main.container {
 
 .hero-text {
     width: 90%;
-    max-width: 60ch;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    max-width: 80ch;
+    margin: 0 auto 2rem auto
 }
 
 .cookie-section {
@@ -103,12 +102,13 @@ footer {
     padding: 2rem 0;
 }
 
+/* This is a media query which will change my styles when the viewport is 700px or more */
 @media (min-width: 700px) {
     .header-container {
-    text-align: left;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     h1 {
@@ -119,7 +119,7 @@ footer {
         margin: 0 0 0 1rem;
     }
 
-    main.container {
+    .main-container {
         padding-top: 2rem;
     }
 
@@ -130,5 +130,11 @@ footer {
 
     .img-container {
         width: 30%;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        color: red;
     }
 }
