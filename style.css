@@ -6,7 +6,15 @@
 body {
     font-family: "poppins", sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.6;
     color: black;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 header {
@@ -15,6 +23,7 @@ header {
 
 .container {
     width: 90%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -35,6 +44,12 @@ li {
     list-style: none;
     display: inline-block;
     margin: 0 0.5rem;
+    cursor: pointer;
+    transition: 2s;
+}
+
+li:hover {
+    color: white;
 }
 
 a {
@@ -43,17 +58,50 @@ a {
     color: inherit;
 }
 
-
-/* --Ignore--
-@media(min-width: 700px){
-    .header-container{
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-    }
+main.container {
+    padding-top: 1rem;
 }
-*/
+
+.hero-img {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    width: 90%;
+    max-width: 60ch;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.cookie-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    margin-bottom: 1rem;
+}
+
+.cookie-img {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.img-text {
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 2rem 0;
+}
 
 @media (min-width: 700px) {
     .header-container {
@@ -69,5 +117,18 @@ a {
 
     li {
         margin: 0 0 0 1rem;
+    }
+
+    main.container {
+        padding-top: 2rem;
+    }
+
+    .cookie-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        width: 30%;
     }
 }
