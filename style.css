@@ -1,3 +1,4 @@
+/* Styles added to the * symbol will affect every elemlent on the page */
 * {
     box-sizing: border-box;
 }
@@ -20,6 +21,8 @@ header {
 .header-container {
     padding: 1.5rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -36,5 +39,35 @@ li {
 
 a {
     text-decoration: none;
+    /* anchor elements do not inherit from parents by default */
     color: inherit;
+}
+
+
+/* --Ignore--
+@media(min-width: 700px){
+    .header-container{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+}
+*/
+
+@media (min-width: 700px) {
+    .header-container {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    li {
+        margin: 0 0 0 1rem;
+    }
 }
