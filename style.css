@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+header {
+    background-color: pink;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
