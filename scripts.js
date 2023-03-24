@@ -11,7 +11,7 @@ if (time < 12) {
 } else if (time <= 18) {
     message = "Good afternoon " + user + " You better be having a good day! -__-";
 } else if (time < 24) {
-    message = "Good night " + user + " Now GO to bed! :/";
+    message = "Good night " + user + ", Now GO to Sleep I'm tired!";
 } else {
     message = "That hour does not exist " + user;
 }
