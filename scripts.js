@@ -18,7 +18,7 @@ if (time < 12) {
 
 console.log(message);
 
-let info = confirm("I am an egg, Are you an egg " + user + "?");
+let info = confirm("DO YOU LIKE COOKIESSSS " + user + "?");
 
 if(info === true) {
     console.log("Thats good " + user);
