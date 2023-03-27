@@ -102,6 +102,11 @@ footer {
     padding: 2rem 0;
 }
 
+.star{
+    width: 1rem;
+    display: inline-block;
+}
+
 /* This is a media query which will change my styles when the viewport is 700px or more */
 @media (min-width: 700px) {
     .header-container {
@@ -130,11 +135,5 @@ footer {
 
     .img-container {
         width: 30%;
-    }
-}
-
-@media (min-width: 900px) {
-    h1 {
-        color: red;
     }
 }
